@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/node
 
+src/apiKey.js
+
 ### Node ###
 # Logs
 logs
