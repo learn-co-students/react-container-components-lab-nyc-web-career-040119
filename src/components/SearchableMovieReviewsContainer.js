@@ -21,6 +21,7 @@ export default class SearchableMovieReviewsContainer extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
+
     fetch(`https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${this.state.searchTerm}&api-key=${API_KEY}`)
       .then(r => r.json())
       .then(reviews => {
