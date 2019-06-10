@@ -86,3 +86,29 @@ documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation
 - [_New York Times_ Movie Reviews API Documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-container-components-lab'>Container Components Lab</a> on Learn.co and start learning to code for free.</p>
+
+## MVP Outline
+
+index.js
+- LatestMovieReviewsContainer
+  <!-- - `className="latest-movie-reviews"` -->
+  <!-- - **state**
+    - reviews: [] -->
+  - MovieReviews
+    - **this.state.reviews**
+    <!-- - `className="review-list"` -->
+- SearchableMovieReviewsContainer
+  <!-- - `className="searchable-movie-reviews"` -->
+  - **state**
+    - searchTerm
+    - function updateInput
+    - reviews
+    - searchClicked: false
+      - fetch on true
+  - search bar
+    - controlled form
+      - onChange={this.updateInput()}
+    - search
+      - onClick
+  - MovieReviews
+    - **this.state.reviews**
